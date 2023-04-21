@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html { 
+   scroll-behavior: smooth;
+}
+
+body {
+    background-color: #3b3b3b;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #B52902;
+
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    float: right;
+    transition: .2s background-color ease-in;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 30px;
+    font-family: 'Shantell Sans', cursive;
+}
+.abt_cats {
+    height: 100vh;
+    padding: 40px 0;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    flex-basis:0;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    
+}
+.abt_cats[id="origen"] {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./public/gatos1.jpg);
+}
+.text_container h1, .gal_imagenes h1, .tabla_razas h1 {
+    cursor: pointer;
+    font-family: 'Climate Crisis', cursive;
+    font-size: 35px;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    user-select: none;
+    transition: .1s font-size ease-in;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow:   0px -6px 0 #212121,  
+                 0px -6px 0 #212121,
+                 0px  6px 0 #212121,
+                 0px  6px 0 #212121,
+                -6px  0px 0 #212121,  
+                 6px  0px 0 #212121,
+                -6px  0px 0 #212121,
+                 6px  0px 0 #212121,
+                -6px -6px 0 #212121,  
+                 6px -6px 0 #212121,
+                -6px  6px 0 #212121,
+                 6px  6px 0 #212121,
+                -6px  18px 0 #212121,
+                 0px  18px 0 #212121,
+                 6px  18px 0 #212121,
+                 0 19px 1px rgba(0,0,0,.1),
+                 0 0 6px rgba(0,0,0,.1),
+                 0 6px 3px rgba(0,0,0,.3),
+                 0 12px 6px rgba(0,0,0,.2),
+                 0 18px 18px rgba(0,0,0,.25),
+                 0 24px 24px rgba(0,0,0,.2),
+                 0 36px 36px rgba(0,0,0,.15);
+}
+
+.text_container {
+    width: 550px;
+}
+.navbar div:nth-child(2) ul li:hover {
+    background-color: #CE0000;
+}
+
+.text_container .definition {
+    user-select: none;
+    font-weight: bold;
+    opacity: 0.8;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    background-color: #fff;
+    margin: 10px auto;
+    transition: .3s opacity, font-weight ease-in;
+}
+.text_container .definition:hover {
+    opacity: 1;
+    font-weight: normal;
+}
+.text_container h1:hover {
+    font-size: 34px;
+}
+.text_container, .ilustration_container {
+    margin: 40px;
+}
+.ilustration_container {
+    width: 400px;
+    transition: .5s transform ease-out;
+}
+
+.ilustration_container img {
+    height: 660px;
+    width: 500px;
+    -webkit-user-drag: none;
+}
+.ilustration_container:hover {
+    transform: rotate(360deg);
+}
+
+.abt_cats[id="evolucion"] {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./public/gato.jpg);
+}
+.abt_cats[id="acerca"] {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./public/gatos2.jpg);
+}
+.abt_cats[id="acerca"] img {
+    height: 550px;
+}
+
+.gal_imagenes {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./public/gato-dark.jpg);
+    padding: 40px 0;
+}
+.gal_imagenes .gatos_wrap img {
+    -webkit-user-drag: none;
+    opacity: 0.8;
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
+    margin: 40px 20px;
+    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+}
+.gal_imagenes .gatos_wrap {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.tabla_razas {
+    background-image: url(./public/gatos-razas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0;
+    font-size: 19px;
+}
+
+.tabla_razas tr, th, td {
+    background-color: #fff;
+    padding: 20px;
+    opacity: 0.8;
+}
+.tabla_razas tr {
+    transition: .3s opacity, box-shadow ease-in;
+}
+.tabla_razas table {
+    user-select: none;
+    border-collapse: collapse;
+    margin: 30px auto;
+}
+.tabla_razas th, td {
+    border: 2px solid #000;
+}
+
+.tabla_razas tr:hover {
+    opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;}
